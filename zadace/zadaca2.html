@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tea Pavic">
+    <title>Zadaca 2</title>
+</head>
+<body>
+    <!-- Naslov 2.zadaće -->
+    <header>
+        <h1><strong>Dobrodošli na poučne radionice</strong></h1>
+        <p>Podijelite s nama vaše mišljenje i pratite naše objave</p>
+    </header>
+
+    <!-- Tablice s rasporedom objava -->
+    <section>
+        <h2>Raspored radionica</h2>
+        <table border="1">
+            <caption>Raspored za listopad 2024.</caption>
+            <tr>
+                <th rowspan="2">Datum</th>
+                <th colspan="2">Aktivnoost</th>
+            </tr>
+            <tr>
+                <th>Vrsta radionice</th>
+                <th>Autor</th>
+            </tr>
+            <tr>
+                <td>1.10.2024.</td>
+                <td>Tehnologija</td>
+                <td>Marko</td>
+            </tr>
+            <tr>
+                <td>10.10.2024.</td>
+                <td>Putovanja</td>
+                <td>Ana</td>
+            </tr>
+            <tr>
+                <td>15.10.2024.</td>
+                <td colspan="2">Gostujući članak</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Obrazac za registraciju -->
+    <section>
+        <h2>Registracija korisnika</h2>
+        <form action="#" method="post">
+            <label for="name">Ime i prezime:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="password">Lozinka:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <br>
+            <label>Uloga:</label><br>
+            <input type="radio" id="admin" name="role" value="admin">
+            <label for="admin">Admin</label><br>
+            <input type="radio" id="guest" name="role" value="guest" checked>
+            <label for="guest">Gost</label>
+            <br>
+            <br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Prihvaćam uvjete korištenja</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+    <!-- Multimedijski elementi (audio i video) -->
+    <section>
+        <h2>Multimedijski sadržaj</h2>
+
+        <!-- Audio element -->
+        <h3>Poslušajte naš najnoviji podcast:</h3>
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+            Vaš preglednik ne podržava audio element.
+        </audio>
+        
+        <!-- Video element -->
+        <h3>Pogledajte naš uvodni video:</h3>
+        <video src="320" height="240" controls>
+            <source src="uvodni-video.mp4" type="video/mp4">
+            Vaš preglednik ne podržava video element.
+        </video>
+
+    </section>
+    
+</body>
+</html>
