@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tea Pavic">
+    <title>Moja Web Stranica</title>
+</head>
+<body>
+    <h1>Dobrodošli na moju web stranicu</h1>
+    <p>Ovo je <strong>prvi paragraf</strong> na mojoj web stranici</p>
+    <p>Ovo je <em>moj drugi</em> paragraf</p>
+    <br>
+    <!--  Liste -->
+    <p>Dani u tjednu:</p>
+    <ul type="disc">
+        <li>Ponedjeljak</li>
+         <li>Utorak</li>
+         <li>Srijeda</li>
+        <li>Četvrtak</li>
+         <li>Petak</li>
+        <li>Subota</li>
+        <li>Nedjelja</li>
+    </ul>
+    <br>
+    <p>Boje</p>
+    <ol reversed type="I">
+        <li>Crvena</li>
+        <li>Plava</li>
+        <li>Zelena</li>
+        <li>Žuta</li>
+    </ol>
+    <br>
+    <!-- Slika -->
+    <h2>Knjige</h2>
+    <img src="https://www.bug.hr/img/internet-archive-davao-korisnicima-knjige-besplatno-pa-zaradio-tuzbu_6qw35U.jpg" alt="knjižnica" width="450" height="300">
+    <br>
+
+    <h3>Linkovi</h3>
+    <a href="https://www.unisb.hr/" target="_blank">Kliknite ovdje</a> <br>
+
+    <a href="https://www.gskos.unios.hr/" target="_blank">GSKOS</a> <br>
+    <br>
+
+    <!-- Tablice -->
+    <h3>Tablica:</h3>
+    <table border="1">
+        <tr>
+            <th colspan="6">Time table</th>
+        </tr>
+        <tr>
+         <td rowspan="7">Hours</td>
+        </tr>
+        <tr>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+        <tr>
+            <td colspan="2">Maths</td>
+            <td>Sciene</td>
+            <td>Maths</td>
+            <td>Arts<td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td colspan="5">LUNCH</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td colspan="2">Science</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- HTML forme -->
+    <h3>Forme u HTML-u</h3>
+    <form action="" method="get">
+        <label for="">Korisničko ime:</label>
+        <input type="text" id="name" name="name"> <br>
+   
+        <label>Unesi šifru:</label>
+        <input type="password" maxlength="20"> <br>
+   
+        <label>Unesi email:</label>
+        <input type="email"> <br>
+  
+        <label>Tri radio tipke:</label> <br>
+
+        <input type="radio" name="tipke" id="admin" value="admin">
+        <label for="admin">Admin</label> <br>
+
+        <input type="radio" name="tipke" id="guest" value="guest">
+        <label for="guest">Guest</label> <br>
+
+        <input type="radio" name="tipke" id="other" value="other">
+        <label for="other">Other</label> <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+   
+        <input type="submit" value="POST">
+    </form>
+    <br>
+
+    <h3>Audio i video elementi:</h3>
+
+    <video src="320" height="240" controls>
+        <source src="puppy.m4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <audio controls>
+        <source src="test-audio.ogg" type="audio/mpeg">
+         Your browser does not support the audio element.
+    </audio>
+    <br>
+
+</body>
