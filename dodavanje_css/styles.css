@@ -1,0 +1,22 @@
+/* univerzalni selektor (primjenjuje se na cijeloj stranici) */
+* {font-family:"Montserrat", sans-serif; ;}
+
+
+/* element selektor */
+h3 {color:rgb(38, 212, 22); background-color: rgb(153, 200, 231);}
+
+h4 {color:#07d8f0}
+
+p {font-weight: 600; font-size: 2rem;}
+
+div {width: 400px; height: 400px; background-color: rgb(136, 241, 30); text-align: center;}
+
+/* selektor klase */
+.naslov {color: bisque;}
+
+/* selektor id */
+#naslov1 {color: blueviolet;}
+
+.rgb {color: rgb(219, 17, 209);}
+
+.amet {background-color: rgb(148, 167, 65);}
