@@ -1,0 +1,53 @@
+/* Stilizacija naslova */
+h1#glavni-naslov {
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    color: #4CAF50;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Glavni sadržaj */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    color: #37474F;
+}
+
+p:nth-of-type(2) {
+    font-size: 18px;
+    color: #546E7A;
+}
+
+p:nth-of-type(3) {
+    font-size: 20px;
+    color: #78909C;
+}
+
+.highlight {
+    color: #FFC107;
+}
+
+ul {
+    background-color: #ECEFF1;
+    padding: 10px;
+}
+
+
+/* Stilizacija popisa */
+ul {
+    list-style-type: square; /* Možete koristiti i 'circle', 'disc', itd. */
+}
+
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 0;
+}
+
+
