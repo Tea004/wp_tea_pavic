@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .relative {width: 300px; height: 200px;
+        background-color: aqua;
+        position: relative;}
+        .absolute {width: 70px; height: 70px;
+        background-color: chartreuse;
+        position: absolute;
+        left: 265px;
+        top: 50px;
+        z-index: -1;}
+        .krug {width: 90px; height: 90px;
+        background-color: blue;
+        position: absolute;
+        border-radius: 50%;}
+    </style>
+</head>
+<body>
+    <h3>CSS position</h3>
+    <div class="relative">
+        <div class="absolute"></div>
+        <div class="krug"></div>
+    </div>
+</body>
+</html>
