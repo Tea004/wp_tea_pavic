@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tea Pavic">
+    <title>Web programiranje zadaća 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #87CEEB;
+            border: 2px solid #333333;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .card h2 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .card p {
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        .card .additional-info {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .flag {
+            position: relative;
+            width: 400px; /* širina zastave */
+            height: 250px; /* visina zastave */
+            background-color: #ff0000;
+            border-radius: 20px; /* zaobljeni rubovi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px; /* razmak između zastave i prethodnih elemenata */
+        }
+
+        .cross {
+            position: relative;
+            width: 150px; /* širina križa */
+            height: 150px; /* visina križa */
+        }
+
+        .horizontal, .vertical {
+            position: absolute;
+            background-color: #ffffff;
+        }
+
+        .horizontal {
+            width: 100%;
+            height: 40px; /* visina horizontalnog dijela križa*/
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .vertical {
+            width: 40px; /* širina vertikalnog dijela križa*/
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv: Zagreb</p>
+        <p>Država: Hrvatska</p>
+        <p>Populacija: 800,000</p>
+        <br>
+        <br>
+        <p class="additional-info">
+            <a href="https://hr.wikipedia.org/wiki/Zagreb" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv: Beč</p>
+        <p>Država: Austrija</p>
+        <p>Populacija: 1,900,000</p>
+        <br>
+        <br>
+        <p class="additional-info">
+            <a href="https://hr.wikipedia.org/wiki/Be%C4%8D" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Informacije o gradu</h2>
+        <p>Naziv: Pariz</p>
+        <p>Država: Francuska</p>
+        <p>Populacija: 2,100,000</p>
+        <br>
+        <br>
+        <p class="additional-info">
+            <a href="https://hr.wikipedia.org/wiki/Pariz" target="_blank">Dodatne informacije</a>
+        </p>
+    </div>
+   
+    <div class="flag">
+        <div class="cross">
+            <div class="horizontal"></div>
+            <div class="vertical"></div>
+        </div>
+    </div>
+
+</body>
+</html>
