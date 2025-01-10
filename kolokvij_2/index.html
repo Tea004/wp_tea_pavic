@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.kolokvij Web programiranje</title>
+    <style>
+        .dutch-flag {
+            width: 300px;
+            height: 150px;
+        }
+        .red {
+            background-color: rgb(219, 14, 14);
+            height: 6ch;
+        }
+        .white {
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+        }
+        .blue {
+            background-color: rgb(35, 35, 204);
+            height: 60px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 15px;
+            border: 5px solid #333;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            background-color: #f0f0f0;
+        }
+
+        .input-field {
+            background-color: #eef;
+            border: 2px solid #88f;
+            padding: 5px;
+            margin: 10px;
+            width: 200px;
+        }
+        #special-input {
+            background-color: #ffe;
+            border: 3px dashed #f88;
+            padding: 10px;
+            width: 220px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+        }
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+        .item1 { background-color: red; }
+        .item2 { background-color: green; }
+        .item3 { background-color: blue; }
+        .item4 { background-color: orange; }
+        .item5 { background-color: purple; }
+        .item6 { background-color: cyan; }
+        .item7 { background-color: yellow; }
+        .item8 { background-color: pink; }
+        .item9 { background-color: gray; }
+    </style>
+</head>
+<body>
+    <h3>Zastava Nizozemske</h3>
+    <div class="dutch-flag">
+        <div class="red"></div>
+        <div class="white"></div>
+        <div class="blue"></div>
+    </div>
+    <br>
+    <div class="box">Lijepi okvir sjenčanja</div>
+
+    <form>
+        <input type="text" class="input-field" placeholder="Klasa ...">
+        <input type="text" id="special-input" placeholder="ID ...">
+    </form>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+        <div class="grid-item item9">9</div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let ime = prompt("Unesite vaše ime:");
+            if (ime) {
+                alert(`Vaše ime je ${ime}.`);
+            }
+        });
+    </script>
+</body>
+</html>
